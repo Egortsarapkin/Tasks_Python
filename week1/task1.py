@@ -1,3 +1,8 @@
+"""
+leetcode.com/problem-list/string/
+url: https://leetcode.com/problems/longest-palindromic-substring/
+"""
+
 import math
 
 
