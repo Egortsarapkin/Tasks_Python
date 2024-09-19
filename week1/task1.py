@@ -5,7 +5,7 @@ class Solution(object):
 
     def longestPalindrome(self, s):
         def expanda(st, left, right):
-            while (left >= 0 and right < len(st) and st[left] == st[right]):
+            while left >= 0 and right < len(st) and st[left] == st[right]:
                 left -= 1
                 right += 1
 
@@ -21,5 +21,4 @@ class Solution(object):
                 start = math.ceil(i - (length - 1) / 2)
                 end = math.floor(i + length / 2)
 
-        return (s[int(start):(int(end + 1))])
-
+        return s[int(start): (int(end + 1))]
