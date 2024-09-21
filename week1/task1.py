@@ -5,7 +5,6 @@ url: https://leetcode.com/problems/longest-palindromic-substring/
 
 import math
 
-
 class Solution(object):
 
     def longestPalindrome(self, s):
@@ -27,3 +26,4 @@ class Solution(object):
                 end = math.floor(i + length / 2)
 
         return s[int(start): (int(end + 1))]
+print(Solution.longestPalindrome(1,"cbbd"))
