@@ -3,6 +3,7 @@ leetcode.com/problems/array/
 url: https://leetcode.com/problems/jump-game-ii
 """
 
+
 class Solution(object):
     def jump(self, nums):
         def jump1(nums):
@@ -23,5 +24,5 @@ class Solution(object):
                         break
 
             return jumps
-        return jump1(nums)
 
+        return jump1(nums)

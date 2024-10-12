@@ -3,6 +3,7 @@ leetcode.com/problems/array/
 url: https://leetcode.com/problems/permutations-ii/submissions
 """
 
+
 class Solution(object):
     def permuteUnique(self, nums):
         def permute_unique(nums):
@@ -25,7 +26,6 @@ class Solution(object):
                     if i > 0 and nums[i] == nums[i - 1] and not used[i - 1]:
                         continue
 
-
                     used[i] = True
                     current_permutation.append(nums[i])
                     backtrack()
@@ -35,4 +35,5 @@ class Solution(object):
 
             backtrack()
             return result
+
         return permute_unique(nums)

@@ -3,6 +3,7 @@ leetcode.com/problems/array/
 url: https://leetcode.com/problems/permutations/submissions
 """
 
+
 class Solution(object):
     def permute(self, nums):
         def permute1(nums):
@@ -22,4 +23,5 @@ class Solution(object):
 
             backtrack([])
             return result
+
         return permute1(nums)
