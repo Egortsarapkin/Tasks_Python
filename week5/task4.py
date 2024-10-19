@@ -3,11 +3,11 @@ leetcode.com/problem-list/hash-table/
 url: https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
 """
 
+
 class Solution(object):
     def letterCombinations(self, digits):
 
-        arr = ["", "", "abc", "def", "ghi",
-               "jkl", "mno", "pqrs", "tuv", "wxyz"]
+        arr = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"]
 
         def deleted_space(n):
             a = list(n)

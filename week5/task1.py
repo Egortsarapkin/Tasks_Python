@@ -1,8 +1,8 @@
-
 """
 leetcode.com/problem-list/hash-table/
 url: https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/
 """
+
 
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
@@ -17,9 +17,7 @@ class Solution(object):
                     char_set.remove(s[left])
                     left += 1
 
-
                 char_set.add(s[right])
-
 
                 max_length = max(max_length, right - left + 1)
 
