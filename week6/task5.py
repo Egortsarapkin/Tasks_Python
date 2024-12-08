@@ -13,16 +13,15 @@ class Solution(object):
 
             for right in range(len(s)):
 
-                count[ord(s[right]) - ord('A')] += 1
-                max_count = max(max_count, count[ord(s[right]) - ord('A')])
-
+                count[ord(s[right]) - ord("A")] += 1
+                max_count = max(max_count, count[ord(s[right]) - ord("A")])
 
                 while (right - left + 1) - max_count > k:
-                    count[ord(s[left]) - ord('A')] -= 1
+                    count[ord(s[left]) - ord("A")] -= 1
                     left += 1
-
 
                 max_length = max(max_length, right - left + 1)
 
             return max_length
+
         return characterReplacement(s, k)
