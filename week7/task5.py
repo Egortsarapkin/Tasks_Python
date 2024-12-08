@@ -1,9 +1,11 @@
-'''
+"""
 https://leetcode.com/problem-list/sliding-window/
 url: https://leetcode.com/problems/longest-turbulent-subarray/
-'''
+"""
 
 from typing import List
+
+
 class Solution:
     def maxTurbulenceSize(self, arr: List[int]) -> int:
         n = len(arr)

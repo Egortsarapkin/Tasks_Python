@@ -2,7 +2,9 @@
 https://leetcode.com/problem-list/sliding-window/
 url: https://leetcode.com/problems/subarray-product-less-than-k/
 """
+
 from typing import List
+
 
 class Solution:
     def numSubarrayProductLessThanK(self, nums: List[int], k: int) -> int:
